@@ -1,0 +1,68 @@
+.upper-deck,
+.lower-deck {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Adjust spacing between upper and lower deck */
+}
+
+.custom-checkbox {
+  width: 35px;
+  height: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 15px gray;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+.checked .rectangle {
+  background-color: gray; /* Change color when checked */
+}
+
+.seat-selection-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.deck {
+  margin: 0 20px;
+}
+
+.seat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.seat {
+  display: flex;
+  align-items: center;
+  width: calc(20% - 10px); /* 20% width for each seat with a gap of 10px between seats */
+  margin-bottom: 10px; /* Adjust vertical spacing between seats */
+}
+
+.label {
+  margin-left: 5px;
+}
+
+.selected {
+  color: blue;
+  font-weight: bold;
+}
+
+.deck-container {
+  display: flex;
+  flex-direction: column; /* Display children vertically */
+}
+
+.upper-deck,
+.lower-deck {
+  display: flex;
+  flex-wrap: wrap;
+}
