@@ -19,6 +19,7 @@ const tripsRouter = require("./routes/trips"); // Import the trips router
 app.use("/api", busOwnerRouter);
 app.use("/api", stateDistrictRouter);
 app.use("/api", tripsRouter); // Use the trips router for handling POST requests to /api/trips
+app.use("/api", require("./routes/models/stripe") )
 
 app.listen(5000, () => {
     console.log("listening on port 5000");

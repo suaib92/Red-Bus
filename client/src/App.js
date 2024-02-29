@@ -7,6 +7,7 @@ import BusBookingForm from './components/BusBookingForm'; // Import the BusBooki
 import Navbar from './components/Nevbar';
 import "./App.css"
 import Footer from './components/Footer';
+import Success from './components/Success'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/busoptions" element={<BusOptions />} />
         {/* Ensure the path matches exactly */}
         <Route path="/bus-booking-form" element={<BusBookingForm />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
       <Footer/>
     </Router>
